@@ -84,3 +84,55 @@ let bananaParty = (currentTime, tZg) => {
 };
 
 bananaParty("19:00", "est");
+
+/* say we have a little program 
+going with Mr. Bungle lyrics, 
+mainly because I'm listening to the 
+California album right now. 
+song I didn't use:
+golemIITheBionicVapourBoy */
+
+const theHolyFilament = noneOfThemKnewTheyWereRobots = 1;
+staringIntoGlassyEyes = 'Mesmerized';
+const california = theAirConditionedNightmare = 1;
+
+let golemIITheBionicVapourBoy = goodByeSoberDay;
+
+let mrBungle = function vanityFair (golemIITheBionicVapourBoy)
+
+{
+  if (golemIITheBionicVapourBoy !== arsMoriendi &&golemIITheBionicVapourBoy !== pinkCigarette ) 
+  {
+    return 'Squeeze me macaroni, slop your face with my bologna!';
+  }
+}
+
+  let sweetCharity = function retroVertigo (staringIntoGlassyEyes)
+{
+    if (theHolyFilament !== noneOfThemKnewTheyWereRobots)
+    {
+    return 'Slap back white shark attack';
+    }
+  }
+  
+if (golemIITheBionicVapourBoy == arsMoriendi)
+
+{
+console.log  (`He who hears in the vast silence He who wafts on the red wind "In extremis" He who steals pearls from the ashes He who leaps across the precipice "Ride si sapis" 'Ave atque vale' I shall rise again Bardo of the flesh So feast on me All my bones are laughing As you're dancing on my grave 'Ave atque vale' `); 
+}
+
+else if (golemIITheBionicVapourBoy == pinkCigarette)
+
+{ 
+console.log (`I found a pink cigarette... on the bed the day that you left`); 
+}
+
+
+/* But you have this const down here you can't just
+copy-paste and move to the top with the other const */
+
+const goodByeSoberDay = arsMoriendi;
+
+/* the const is initializing after 
+goodByeSoberDay is being called so you get" an initialization error */
+
