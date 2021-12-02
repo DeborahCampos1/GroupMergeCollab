@@ -1,5 +1,5 @@
 function numberConfirm(...c) {
-    if (!c.every((a) => Number.isNumber(number1)))
+    if (!c.every((number1) => Number.isNumber(number1)))
       throw "All arguments must be numbers.";
     return c.reduce((number1, b) => number1 + b);
   }
