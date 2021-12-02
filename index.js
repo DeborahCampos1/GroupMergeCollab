@@ -136,3 +136,41 @@ const goodByeSoberDay = arsMoriendi;
 /* the const is initializing after 
 goodByeSoberDay is being called so you get" an initialization error */
 
+/* Fast Inverse Square Root in Javascript */
+const buf = new ArrayBuffer(4)
+const f32 = new Float32Array(buf)
+const u32 = new Uint32Array(buf)
+
+function fisr(x) {
+	const x2 = 0.5 * (f32[0] = x)
+	u32[0] = (0x5f3759df - (u32[0] >> 1))
+	let y = f32[0]
+	y = y * (1.5 - (x2 * y * y))
+	return y
+}
+
+const itterations = 999999999
+
+function benchFisr(){
+	for(let i = 0; i < itterations; i++){
+		(fisr(i + 1))
+	}
+}
+
+function benchSqrt() {
+	for (let i = 0; i < itterations; i++) {
+		(1/Math.sqrt(i + 1))
+	}
+}
+
+function benchmark(){
+	let startTS = Date.now()
+	benchFisr()
+	console.log('fisr: ',Date.now() - startTS, 'ms')
+	
+	startTS = Date.now()
+	benchSqrt()
+	console.log('1/sqrt: ',Date.now() - startTS, 'ms')
+}
+
+benchmark()
