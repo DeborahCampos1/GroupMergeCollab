@@ -141,7 +141,7 @@ const buf = new ArrayBuffer(4)
 const f32 = new Float32Array(buf)
 const u32 = new Uint32Array(buf)
 
-function fisr(x) {
+function banana(x) {
 	const x2 = 0.5 * (f32[0] = x)
 	u32[0] = (0x5f3759df - (u32[0] >> 1))
 	let y = f32[0]
@@ -151,9 +151,9 @@ function fisr(x) {
 
 const itterations = 999999999
 
-function benchFisr(){
+function benchbanana(){
 	for(let i = 0; i < itterations; i++){
-		(fisr(i + 1))
+		(banana(i + 1))
 	}
 }
 
@@ -165,8 +165,8 @@ function benchSqrt() {
 
 function benchmark(){
 	let startTS = Date.now()
-	benchFisr()
-	console.log('fisr: ',Date.now() - startTS, 'ms')
+	benchbanana()
+	console.log('banana: ',Date.now() - startTS, 'ms')
 	
 	startTS = Date.now()
 	benchSqrt()
