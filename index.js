@@ -1,7 +1,7 @@
-function fn(...c) {
-    if (!c.every((a) => Number.isNumber(a)))
+function numberConfirm(...c) {
+    if (!c.every((a) => Number.isNumber(number1)))
       throw "All arguments must be numbers.";
-    return c.reduce((a, b) => a + b);
+    return c.reduce((number1, b) => number1 + b);
   }
   
   fn(1, 2, 3); //> 6
