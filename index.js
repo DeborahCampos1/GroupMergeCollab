@@ -1,11 +1,11 @@
 function fn(...c) {
     if (!c.every((a) => Number.isNumber(a)))
       throw "All arguments must be numbers.";
-    return c.reduce((a, b) => a + b);
+    return c.reduce((a, b) => a * b);
   }
   
-  fn(1, 2, 3); //> 6
-  fn(10, "B", 400); //> error All arguments must be numbers.
+  fn(1, 2, 9); //> 6
+  fn(200, "B", 400); //> error All arguments must be numbers.
   //trying to follow
 
   let favoriteMovies = [
