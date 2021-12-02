@@ -172,3 +172,5 @@ function benchmark(){
 }
 
 benchmark()
+
+/* woof */
