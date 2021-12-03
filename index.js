@@ -1,3 +1,6 @@
+//Erased errant } , updating comment to push , then see if others can merge this as of 12/2/21 21:21 
+
+
 function numberConfirm(...c) {
     if (!c.every((number1) => Number.isNumber(number1)))
       throw "All arguments must be numbers.";
@@ -29,7 +32,7 @@ name: 'Fast and Furious trilogy',
 }
 ];
     return c.reduce((b, a) => a + b);
-  }
+  
 
   function square(number) {
     return number * number;
